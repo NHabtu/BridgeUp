@@ -20,7 +20,7 @@ for line in QuakeFile:
         plt.scatter(longitude, latitude, label = "earthquakes")
         plt.show()
         
-    if 0< < depth and depth < 210:
+    if 0 < depth and depth < 210:
         plt.scatter(longitude, latitude, label = "earthquakes")
         plt.show()
 

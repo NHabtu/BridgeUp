@@ -3,7 +3,7 @@ plt.clf()#clears the graph to making a blank slate eachtime you renew the code
 import matplotlib.image as mpimg
 
 QuakeFile = open("currentQuakes.txt")
-print(QuakeFile)
+#print(QuakeFile)
 
 QuakeFile.readline()
 
@@ -13,30 +13,32 @@ for line in QuakeFile:
     longitude = float(line[2])#longitude = 3rd item line
     depth = float(line[3])#depth = 4th item line
     
- 
         
     if depth > 415 and 620 > depth:
-        plt.scatter(longitude, latitude, label = "earthquakes")
+        plt.scatter(longitude, latitude, color = "red")
         image = mpimg.imread ("world_map.pdf")
         plt.imshow(image, extent=[-200,200,-60,80])
-        plt.xlabel("Longitude")
+        plt.xlabel("Longitutde")
         plt.ylabel("Latitude")
+        plt.suptitle("Earthquakes and their depths")
         plt.show()
         
     if depth < 415 and depth > 210:
-        plt.scatter(longitude, latitude, label = "earthquakes")
+        plt.scatter(longitude, latitude, color = "orange")
         image = mpimg.imread ("world_map.pdf")
         plt.imshow(image, extent=[-200,200,-60,80])
-        plt.xlabel("Longitude")
+        plt.xlabel("Longitutde")
         plt.ylabel("Latitude")
+        plt.suptitle("Earthquakes and their depths")
         plt.show()
         
     if 0 < depth and depth < 210:
-        plt.scatter(longitude, latitude, label = "earthquakes")
+        plt.scatter(longitude, latitude, color = "yellow")
         image = mpimg.imread ("world_map.pdf")
         plt.imshow(image, extent=[-200,200,-60,80])
-        plt.xlabel("Longitude")
+        plt.xlabel("Longitutde")
         plt.ylabel("Latitude")
+        plt.suptitle("Earthquakes and their depths")
         plt.show()
 
 

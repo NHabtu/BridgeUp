@@ -11,5 +11,11 @@ for line in QuakeFile:
     latitude = float(line[1])# every time you see a comma thats a new line
     longitude = float(line[2])#longitude = 2nd line
     depth = float(line[3])#depth = 3rd line
-    if 415<depth<
+    if 415<depth<620:
+        plt.scatter(longitude, latitude, label = "earthquakes")
+        
+    if 210<depth<415:
+        plt.scatter(longitude, latitude, label = "earthquakes")
+        
+    
 

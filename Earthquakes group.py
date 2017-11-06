@@ -19,18 +19,24 @@ for line in QuakeFile:
         plt.scatter(longitude, latitude, label = "earthquakes")
         image = mpimg.imread ("world_map.pdf")
         plt.imshow(image, extent=[-200,200,-60,80])
+        plt.xlabel("Longitude")
+        plt.ylabel("Latitude")
         plt.show()
         
     if depth < 415 and depth > 210:
         plt.scatter(longitude, latitude, label = "earthquakes")
         image = mpimg.imread ("world_map.pdf")
         plt.imshow(image, extent=[-200,200,-60,80])
+        plt.xlabel("Longitude")
+        plt.ylabel("Latitude")
         plt.show()
         
     if 0 < depth and depth < 210:
         plt.scatter(longitude, latitude, label = "earthquakes")
         image = mpimg.imread ("world_map.pdf")
         plt.imshow(image, extent=[-200,200,-60,80)
+        plt.xlabel("Longitude")
+        plt.ylabel("Latitude")
         plt.show()
 
 

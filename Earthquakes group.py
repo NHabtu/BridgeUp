@@ -33,3 +33,6 @@ for line in QuakeFile:
 
 
  
+image = plt.imread()
+fig, ax = plt.subplots()
+ax.imshow()

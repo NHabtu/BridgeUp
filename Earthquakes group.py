@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-plt.clf()
+plt.clf()#clears the graff for making a blank slate eachtime you renew the code
 
 QuakeFile = open("currentQuakes.txt")
 print(QuakeFile)
@@ -7,12 +7,9 @@ print(QuakeFile)
 QuakeFile.readline()
 
 for line in QuakeFile:
-    line = line.split(',')
-    latitude = float(line[1])
-    longitude = float(line[2])
-    depth = float(line[3])
-    if 415<depth<620:
-        plt.scatter (longitude, latitude, label = "earthquake")
-        
-       
-    
+    line = line.split(',')# every time you see a comma thats a new line
+    latitude = float(line[1])# every time you see a comma thats a new line
+    longitude = float(line[2])#longitude = 2nd line
+    depth = float(line[3])#depth = 3rd line
+    if depth<
+

@@ -4,12 +4,13 @@ plt.clf()
 QuakeFile = open("currentQuakes.txt")
 print(QuakeFile)
 
+QuakeFile.readline()
+
 for line in QuakeFile:
     line = line.split(',')
-    latitude.append(float(line[1]))
-    longitude.append(float(line)[2))
-    depth.append(float(line)[3])))
-    If depth is < 
-    print ("depth is less than 
-plt.plot(latitude, longitude)
+    latitude = float(line[1])
+    longitude = float(line[2])
+    depth = float(line[3])
+    
+    
 

@@ -12,6 +12,13 @@ for line in QuakeFile:
     longitude = float(line[2])#longitude = 3rd item line
     depth = float(line[3])#depth = 4th item line
     
+       if 415<depth<620:
+        plt.scatter(longitude, latitude, label = "earthquakes")
+        plt.plot( 415<depth<620, color = "purple", marker = ".", label="Depth between 415 and 620")
+        
+    if 210<depth<415:
+        plt.scatter(longitude, latitude, label = "earthquakes")
+        
     if depth > 415 and 620 > depth:
         plt.scatter(longitude, latitude, label = "earthquakes")
         plt.show()
@@ -24,3 +31,5 @@ for line in QuakeFile:
         plt.scatter(longitude, latitude, label = "earthquakes")
         plt.show()
 
+
+ 

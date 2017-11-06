@@ -11,5 +11,5 @@ for line in QuakeFile:
     latitude = float(line[1])
     longitude = float(line[2])
     depth = float(line[3])
-    if depth<
+    if 415<depth<620
 

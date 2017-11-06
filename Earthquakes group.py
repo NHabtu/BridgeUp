@@ -11,5 +11,8 @@ for line in QuakeFile:
     latitude = float(line[1])
     longitude = float(line[2])
     depth = float(line[3])
-    if 415<depth<620
-
+    if 415<depth<620:
+        plt.scatter (longitude, latitude, label = "earthquake")
+        
+       
+    
